@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+  <title> Our services</title>
+</head>
+
+<body>
+
+  <!-- review section -->
+  <nav class="navbar bg">
+    <ul class="links-container">
+      <li class="link-item"><a href="../home.html" class="link active">Home</a></li>
+      <li class="link-item"><a href="../product.html" class="link">Services</a></li>
+      <li class="link-item"><a href="../404NotFound.html" class="link">About Us</a></li>
+      <li class="link-item"><a href="../404NotFound.html" class="link">Contact Us</a></li>
+    </ul>
+    <div class="user-interactions">
+      <div class="cart">
+        <img src="img/cart.png" class="cart-icon" alt="">
+        <span class="cart-item-count">0</span>
+      </div>
+      <div class="user">
+        <img src="img/user.png" class="user-icon" alt="">
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h1 class="validator">Payment Method</h1>
+    <section class="validatorContent">
+
+      <div class="cCard" id="cCard">
+          </div>
+              <p class="creditCardInfo">Numero de Tarjeta</p>
+              <p class="creditCardUserInfo" id="number">
+                XXXX XXXX XXXX XXXX
+              </p>
+            <div class="flexbox">
+              <div class="group">
+                <p class="creditCardInfo"></p>
+                <p class="creditCardUserInfo" id="name">
+                </p>
+              </div>
+              <div class="group" id="expiration">
+                <p class="creditCardInfo">
+                </p>
+                <p class="creditCardUserInfo">
+                  <span class="month"></span><span class="year"></span>
+                </p>
+              </div>
+            </div>
+          <div class="creditCardData">
+            <div class="grupo contenedorBarraFirma" id="firm">
+              <p class="creditCardInfo">
+              </p>
+                <p id="firms">
+                </p>
+              </div>
+            </div>
+            <div class="group ccvContainer" id="ccv">
+              <p class="creditCardInfo">
+                CCV
+              </p>
+    
+            </div>
+
+      <form class="forms" id="forms">
+        <div class="group">
+          <label for="inputNumber" class="creditCardInfo">Numero Tarjeta</label>
+          <input class="formsInformation" type="number" name="" id="inputNumber"
+            placeholder="Ingresa tu numero de tarjeta" maxlength="19">
+        </div>
+        <div class="group">
+          <label for="inputName" class="creditCardInfo">Nombre</label>
+          <input class="formsInformation" type="text" name="" id="inputName" placeholder="Ingresa nombre y apellido"
+            maxlength="19">
+        </div>
+        <div class="flexbox">
+          <div class="group expires">
+            <label for="selectMonth" class="creditCardInfo">Expiracion</label>
+            <div class="flexbox">
+              <div class="groupSelect">
+                <select name="month" id="selectMonth" class="formsInformation">
+                  <option disabled selected>Month</option>
+                </select>
+              </div>
+              <div class="groupSelect">
+                <select name="year" id="selectYear" class="formsInformation">
+                  <option disabled selected>Year</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group cvv">
+          <label class="creditCardInfo" for="inputCVV">CVV</label>
+          <input type="text" id="inputCVV" maxlength="3" class="inputCcv">
+        </div>
+        <button type="button" id ="button" class="button">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <footer>© 2022 Legalify | All Rights Reserved</footer>
+  </footer>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header flexbox" id="close">
+        <h2>Por favor</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p> Ingresa un numero de Tarjeta de Credito válido</p>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+/* PAGINA DEL VALIDADOR */
+
+
+.validatorContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    width: 90%;
+}
+
+.creditCardInfo {
+    color: #7d8994;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.creditCardUserInfo{
+    color: rgb(99, 78, 30);
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.flexbox {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.creditCardUserInfo {
+    margin-top: 60px;
+}
+
+
+.forms {
+ background-color: rgb(109, 97, 52);
+ border-radius: 10px;
+ padding: 100px 40px 40px;  
+ max-width: 100%; 
+ position: relative;
+ top: -80px;
+ width: 700px;
+}
+
+.formsInformation {
+    border: 2px solid #443b02;
+    font-size: 18px;
+    height: 50px;
+    padding: 5px 12px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formsInformation:hover,
+.formsInformation:hover
+.inputCcv:hover
+{
+    border: 2px solid #867d00;
+}
+
+.formsInformation:focus,
+.formsInformation:focus,
+.inputCcv:focus {
+   outline: #443b02;
+   box-shadow: 1px 7px 10px -5px rgba(192, 128, 17, 0.3);
+}
+
+.expires {
+    width: 100%;
+}
+
+.cvv {
+    min-width: 100px;
+}
+
+.groupSelect {
+    margin-right: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.inputCcv {
+    height: 40px;
+    margin: 10px 0;
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    font-size: 22px;
+    color: rgb(52, 29, 15);
+    background-color: rgb(253, 243, 176);
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color:rgb(255, 255, 255);
+}
+
+.modal {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    text-align: center;
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  border: 1px solid #999;
+  width: 40%;
+}
+
+.close {
+  color: white;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color:#999;
+  color: white;
+}
