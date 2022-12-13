@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="404NotFound.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body onload="charge()">
+  <nav class="navbar">
+    <ul class="links-container">
+      <li class="link-item"><a href="../home.html" class="link active">Home</a></li>
+      <li class="link-item"><a href="../product.html" class="link">Services</a></li>
+      <li class="link-item"><a href="../404NotFound.html" class="link">About Us</a></li>
+      <li class="link-item"><a href="../404NotFound.html" class="link">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="cart-section">
+    <div class="product-list">
+      <p class="section-heading">your cart</p>
+      <div class="cart-container">
+        <div class="cart-container-row">
+          <div class="cart-container-col">
+            <img class="sm-product-img" id="image" alt="">
+          </div>
+          <div class="cart-container-col">
+            <div class="sm-text">
+            <p id="name" class="sm-product-name">
+              </p>
+            </div>
+            <p id="price" class="sm-price"></p>
+          </div>
+          <div class="cart-container-col">
+            <div class="item-counter">
+              <p class="item-count"> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-section">
+      <div class="checkout-box">
+        <p class="text">your total bill,</p>
+        <h1 class="bill">$1,500</h1>
+        <a href="index.html" class="checkout-btn">checkout</a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="position:fixed;bottom:0;width:100%;">© 2022 Legalify | All Rights Reserved</footer>
+  <main></main>
+  <script src="route.js" type=""></script>
+
+</body>
+
+</html>
